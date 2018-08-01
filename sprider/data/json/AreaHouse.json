@@ -1,0 +1,630 @@
+[
+  {
+    "link": "https://dz.fang.anjuke.com/loupan/jingjikaifaqu/",
+    "short": "jingjikaifaqu",
+    "text": "经济开发区",
+    "houseInfo": [
+      {
+        "name": "天润和园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：85-117㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价6500元/㎡                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 商贸城东400米德州女子学院北侧"
+      },
+      {
+        "name": "龙溪香岸",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：70-105㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价10005元/m²                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市三八路减河湿地公园东..."
+      },
+      {
+        "name": "德兴墅香苑",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t1室/3室      \t\t\t\t                                                                建筑面积：48.04-126㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区经济开发区大学东路艾家坊（..."
+      },
+      {
+        "name": "星凯国际广场",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室/4室      \t\t\t\t                                                                建筑面积：89.8-195.72㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市东风东路与广川大道交..."
+      },
+      {
+        "name": "东海金辰华府",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室      \t\t\t\t                                                                建筑面积：115㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市经济开发区晶华大道与..."
+      },
+      {
+        "name": "奥特莱斯",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t别墅      \t\t\t\t                                                                建筑面积：208-322㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市减河南岸（东风东路与..."
+      },
+      {
+        "name": "新河尚城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室/4室      \t\t\t\t                                                                建筑面积：98.05-222.97㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市经济开发区新河路与华..."
+      },
+      {
+        "name": "嘉诚东郡",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室/4室      \t\t\t\t                                                                建筑面积：91-165㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价7500元/㎡                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区东方红路与晶华大道交汇处扒..."
+      },
+      {
+        "name": "华腾御城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室/4室      \t\t\t\t                                                                建筑面积：105.51-145㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市经济开发区东方红路锦..."
+      },
+      {
+        "name": "康博公馆",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t1室/2室/3室      \t\t\t\t                                                                建筑面积：50.87-120.41㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市经济开发区东风东路1..."
+      },
+      {
+        "name": "绿城百合花园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t商住      \t\t\t\t                                                                建筑面积：84-184㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市经济开发区天衢东路与..."
+      },
+      {
+        "name": "鲁班华嬉庄园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室/4室      \t\t\t\t                                                                建筑面积：89.3-120㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 德州市经济开发区幸福大道以东，市委党..."
+      },
+      {
+        "name": "大业锦绣阳光城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室/4室      \t\t\t\t                                                                建筑面积：112-190㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价10005元/m²                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 东风路与滨河快速路交汇处"
+      },
+      {
+        "name": "蔚来城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室      \t\t\t\t                                                                建筑面积：87.74㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价5800元/㎡                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区三八路长河公园北岸"
+      },
+      {
+        "name": "绿城百合广场写字楼",
+        "huxing": "\n                                                                建筑面积：94.86-1420㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价6900元/㎡                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 天衢东路与长河大道交汇处"
+      },
+      {
+        "name": "花漫香都",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室      \t\t\t\t                                                                建筑面积：118㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价7000元/㎡                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 新河东路与广川大道交叉口往南500米"
+      },
+      {
+        "name": "德州壹号院",
+        "huxing": "\n                                                                建筑面积：285618㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区东风路与广川大道交汇处南行..."
+      },
+      {
+        "name": "东海福满园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室      \t\t\t\t                                                                建筑面积：115-138㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 晶华大道与果园路交汇处"
+      },
+      {
+        "name": "绿城百合广场",
+        "huxing": "",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价10005元/m²                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 天衢东路与长河大道交汇处"
+      },
+      {
+        "name": "康博公馆公园里",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室      \t\t\t\t                                                                建筑面积：110-120㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9800元/㎡                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 德州市经济开发区东风东路1888号"
+      },
+      {
+        "name": "崇德公馆",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室/4室/5室      \t\t\t\t                                                                建筑面积：111-160㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价10005元/m²                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区广川大道与天衢路交叉口"
+      },
+      {
+        "name": "中梁金麟府",
+        "huxing": "\n                                                                建筑面积：100000㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价10000元/㎡                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市减河西大道与东方红路..."
+      },
+      {
+        "name": "八里庄·盛世华园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：89.01-98.99㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价10005元/m²                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市经济开发区天衢东路北..."
+      },
+      {
+        "name": "万豪华庭公馆",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室      \t\t\t\t                                                                建筑面积：115㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价10005元/m²                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州经济开发区康博南大道澳..."
+      },
+      {
+        "name": "紫麟苑",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室      \t\t\t\t                                                                建筑面积：90.06-118.35㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价10005元/m²                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州经济开发区东风东路澳德..."
+      },
+      {
+        "name": "东海·香港城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室/4室      \t\t\t\t                                                                建筑面积：123.13-174.1㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州东风路与广川大道交汇处..."
+      },
+      {
+        "name": "翠湖庄园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室/4室      \t\t\t\t                                                                建筑面积：105-191㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州经济开发区长河大道翠湖..."
+      },
+      {
+        "name": "德公馆",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室      \t\t\t\t                                                                建筑面积：167㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州幸福大道与南外环交界处..."
+      },
+      {
+        "name": "董子巷",
+        "huxing": "",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价10005元/m²                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 德州市经济开发区晶华大道以东陈段沟临..."
+      },
+      {
+        "name": "外海江南水郡",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t1室/2室/3室      \t\t\t\t                                                                建筑面积：58-141㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价6800元/㎡                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区东风东路2555号经济开发区管..."
+      },
+      {
+        "name": "华嬉盛世",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：111-132㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区新河东路与广川大道交叉口往..."
+      },
+      {
+        "name": "双馨苑",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：93-120.74㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价10005元/m²                    ",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市经济开发区大学路469..."
+      },
+      {
+        "name": "巴塞小镇",
+        "huxing": "\n                                                                建筑面积：50000㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 经济开发区 经济开发区 ] 经济开发区德州市东风东路277号，锦绣..."
+      }
+    ]
+  },
+  {
+    "link": "https://dz.fang.anjuke.com/loupan/dechengqu/",
+    "short": "dechengqu",
+    "text": "德城区",
+    "houseInfo": [
+      {
+        "name": "联兴星河湾",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：76-126.88㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德城区德州市德城区湖滨南路陈公堤口村"
+      },
+      {
+        "name": "德成名郡",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室/4室/5室      \t\t\t\t                                                                建筑面积：102-193.77㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价6800元/㎡                    ",
+        "adress": "[ 德城区 德城区 ] 新河路与新湖大街交汇处南"
+      },
+      {
+        "name": "双企龙城国际",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：80-138.55㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9908元/m²                    ",
+        "adress": "[ 德城区 德城区 ] 德城区德州市德城区新湖南路666号"
+      },
+      {
+        "name": "九龙半岛",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：76.84-8844㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价3600元/㎡                    ",
+        "adress": "[ 德城区 德城区 ] 德城区德州市区西南15公里四女寺镇"
+      },
+      {
+        "name": "三和梅园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t1室/2室/3室      \t\t\t\t                                                                建筑面积：86.3-151.98㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德城区德城区湖滨北路与格瑞德路交汇处"
+      },
+      {
+        "name": "湖滨家园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：80-127.94㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德城区德州市中心湖滨南路原马庄社区"
+      },
+      {
+        "name": "东方御越莊园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：94-124.77㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 东风东路与岔河西大道交汇处"
+      },
+      {
+        "name": "外滩壹号",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：80-136㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9908元/m²                    ",
+        "adress": "[ 德城区 德城区 ] 德城区德州市滨河路与新河路交汇口"
+      },
+      {
+        "name": "华山橡树湾",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室/4室      \t\t\t\t                                                                建筑面积：89.5-180.48㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9908元/m²                    ",
+        "adress": "[ 德城区 德城区 ] 德城区德州市新河东路斜拉大桥东行888..."
+      },
+      {
+        "name": "鲁班御景国际",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室/4室      \t\t\t\t                                                                建筑面积：98.61-157㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德城区德州市新湖南路与新河西路交汇处"
+      },
+      {
+        "name": "德州万达广场",
+        "huxing": "\n                                                                建筑面积：103-139㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德州市新河路与湖滨南大道交界处"
+      },
+      {
+        "name": "德兴城上城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：80.77-118.96㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德兴北大道1199号（德兴北路与长庄路交..."
+      },
+      {
+        "name": "东北城",
+        "huxing": "",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德州市天衢工业园"
+      },
+      {
+        "name": "嘉泰紫御国都",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室      \t\t\t\t                                                                建筑面积：84㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 新岭路与东地南大道交汇处"
+      },
+      {
+        "name": "乐百汇广场",
+        "huxing": "\n                                                                建筑面积：15000㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德州市迎宾路与东方红路交汇处，德州市..."
+      },
+      {
+        "name": "聚秀城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t商住      \t\t\t\t                                                                建筑面积：107-127.77㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价5380元/㎡                    ",
+        "adress": "[ 德城区 德城区 ] 德城区德城区迎宾大街1166号（天衢路与..."
+      },
+      {
+        "name": "唐人中心",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：87.76-124.89㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德城区德城区 德州市三八中路279号（九..."
+      },
+      {
+        "name": "宝林大东关颐景园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：80-138㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价7500元/㎡                    ",
+        "adress": "[ 德城区 德城区 ] 德城区德州市德城区东地北路与青年路交..."
+      },
+      {
+        "name": "桦林·万豪公馆",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：83.6-133.9㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德城区迎宾路与天衢路交汇处西南"
+      },
+      {
+        "name": "银座财富中心",
+        "huxing": "\n                                                                建筑面积：250000㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德州市德城区大学西路银座商城东侧"
+      },
+      {
+        "name": "宝林·新湖家园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：91.34-135.91㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9908元/m²                    ",
+        "adress": "[ 德城区 德城区 ] 德城区新湖南岸（石油勘探研究院南邻）"
+      },
+      {
+        "name": "阳光·国际新城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：94.68-138.09㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9908元/m²                    ",
+        "adress": "[ 德城区 德城区 ] 德城区德城区三八路与湖滨路交汇处东2..."
+      },
+      {
+        "name": "金茂国际公寓",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t1室/2室      \t\t\t\t                                                                建筑面积：48.62-97.23㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德城区德州市德城区商业街中段路南（人..."
+      },
+      {
+        "name": "百卉新城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：90-125㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德城区德州市天衢工业园北外环与104国..."
+      },
+      {
+        "name": "凤凰国际",
+        "huxing": "\n                                                                建筑面积：80000㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德城区湖滨中大道三八路美食城东"
+      },
+      {
+        "name": "百卉社区.旭光城",
+        "huxing": "\n                                                                建筑面积：250000㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9908元/m²                    ",
+        "adress": "[ 德城区 德城区 ] 德州市天衢工业园北外环与104国道交叉..."
+      },
+      {
+        "name": "南苑花城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室      \t\t\t\t                                                                建筑面积：125.19-140.1㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9908元/m²                    ",
+        "adress": "[ 德城区 德城区 ] 德城区德州市湖滨南路振华玻璃厂往南路..."
+      },
+      {
+        "name": "佳纳·书香苑",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t1室/2室/3室      \t\t\t\t                                                                建筑面积：56-120㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9908元/m²                    ",
+        "adress": "[ 德城区 德城区 ] 德城区德城区康乐街北园小学南邻、第十..."
+      },
+      {
+        "name": "东海巴黎城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室      \t\t\t\t                                                                建筑面积：121.77㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9908元/m²                    ",
+        "adress": "[ 德城区 德城区 ] 德城区德州市东风东路原又一村酒厂"
+      },
+      {
+        "name": "振华星城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室      \t\t\t\t                                                                建筑面积：100㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 德城区 德城区 ] 德州市湖滨南路晶华玻璃厂南邻"
+      },
+      {
+        "name": "尚城国际",
+        "huxing": "",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9908元/m²                    ",
+        "adress": "[ 德城区 德城区 ] 德城区天衢路与迎宾路交汇处"
+      },
+      {
+        "name": "天虹生活文化广场",
+        "huxing": "\n                                                                建筑面积：620000㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价9908元/m²                    ",
+        "adress": "[ 德城区 德城区 ] 德城区 湖滨北路与果园路交汇处"
+      }
+    ]
+  },
+  {
+    "link": "https://dz.fang.anjuke.com/loupan/yunhekaifaqu/",
+    "short": "yunhekaifaqu",
+    "text": "运河开发区",
+    "houseInfo": [
+      {
+        "name": "运河鑫城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：87-134㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 运河开发区 运河开发区 ] 天衢西路针织厂东邻"
+      },
+      {
+        "name": "鑫芦悦城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：89-119.78㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 运河开发区 运河开发区 ] 运河开发区商贸大道与新河路交汇处南行..."
+      },
+      {
+        "name": "佰利金湖城",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：95-129㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价5900元/㎡                    ",
+        "adress": "[ 运河开发区 运河开发区 ] 运河开发区德州市东风西路与商贸大道交..."
+      },
+      {
+        "name": "瑞华新都汇",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：78-161㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价6467元/m²                    ",
+        "adress": "[ 运河开发区 运河开发区 ] 运河开发区德州市新河路与商贸大道交汇..."
+      },
+      {
+        "name": "熙凤居",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：73-118㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价5800元/㎡                    ",
+        "adress": "[ 运河开发区 运河开发区 ] 运河开发区铁西商贸大道扒鸡公司原址"
+      },
+      {
+        "name": "牡丹华庭上河园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：70-106㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价5500元/㎡                    ",
+        "adress": "[ 运河开发区 运河开发区 ] 运河开发区德州运河经济开发区东风路运..."
+      },
+      {
+        "name": "德州瑞华新都汇",
+        "huxing": "\n                                                                建筑面积：870000㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 运河开发区 运河开发区 ] 运河开发区德州市新河路与商贸大道交汇..."
+      },
+      {
+        "name": "地鑫·运河人家",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：74.43-114.14㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价6467元/m²                    ",
+        "adress": "[ 运河开发区 运河开发区 ] 运河开发区德州运河开发区运粮路与铁西..."
+      },
+      {
+        "name": "三秀公馆",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室/3室      \t\t\t\t                                                                建筑面积：89.2-99㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价6467元/m²                    ",
+        "adress": "[ 运河开发区 运河开发区 ] 运河开发区天衢西路与广厦街交叉口"
+      },
+      {
+        "name": "枫尚豪园",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t别墅      \t\t\t\t                                                                建筑面积：187.12㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 运河开发区 运河开发区 ] 运河开发区东风西路和山水大街交叉口向..."
+      },
+      {
+        "name": "佰利金湖湾",
+        "huxing": "\n                                                                建筑面积：1100000㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 运河开发区 运河开发区 ] 运河开发区德州市东风西路黑马路口西行..."
+      },
+      {
+        "name": "衡德商贸城",
+        "huxing": "\n                                                                建筑面积：180000㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 运河开发区 运河开发区 ] 德州市东风西路华能电厂西行3000米（德..."
+      }
+    ]
+  },
+  {
+    "link": "https://dz.fang.anjuke.com/loupan/xiajin/",
+    "short": "xiajin",
+    "text": "夏津",
+    "houseInfo": [
+      {
+        "name": "德兴翰林苑",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室      \t\t\t\t                                                                建筑面积：74.87㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价6001元/m²                    ",
+        "adress": "[ 夏津 夏津 ] 夏津夏津县中山南路与文化路交汇处，夏..."
+      },
+      {
+        "name": "德兴银山龙盘",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t3室      \t\t\t\t                                                                建筑面积：102-129㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价6001元/m²                    ",
+        "adress": "[ 夏津 夏津 ] 夏津夏津朝阳西路与银山路交汇处（双桥..."
+      },
+      {
+        "name": "荣兆·锦宸",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t2室      \t\t\t\t                                                                建筑面积：85㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价6001元/m²                    ",
+        "adress": "[ 夏津 夏津 ] 夏津德州市夏津县经济开发区第二实验小..."
+      }
+    ]
+  },
+  {
+    "link": "https://dz.fang.anjuke.com/loupan/qita/",
+    "short": "qita",
+    "text": "其他",
+    "houseInfo": [
+      {
+        "name": "国科国际高尔夫别墅",
+        "huxing": "\n                                                                建筑面积：1270000㎡\n                                ",
+        "favorPos": "",
+        "aroundPrice": "",
+        "adress": "[ 其他 其他 ] 齐河经济开发区，紧临308国道，距黄河..."
+      }
+    ]
+  },
+  {
+    "link": "https://dz.fang.anjuke.com/loupan/lingchengqu/",
+    "short": "lingchengqu",
+    "text": "陵城区",
+    "houseInfo": [
+      {
+        "name": "理想镇",
+        "huxing": "\n                        \t\t\t\t        \t\t\t\t\t户型：\n    \t\t\t\t\t别墅      \t\t\t\t                                                                建筑面积：36.09-220㎡\n                                ",
+        "favorPos": "售价待定",
+        "aroundPrice": "\n                        周边均价8053元/m²                    ",
+        "adress": "[ 陵城区 陵城区 ] 陵城区德州高铁东站马颊河路西首路南"
+      }
+    ]
+  },
+  {
+    "link": "https://dz.fang.anjuke.com/loupan/yucheng/",
+    "short": "yucheng",
+    "text": "禹城",
+    "houseInfo": []
+  },
+  {
+    "link": "https://dz.fang.anjuke.com/loupan/leling/",
+    "short": "leling",
+    "text": "乐陵",
+    "houseInfo": []
+  }
+]
