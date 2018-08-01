@@ -19,17 +19,17 @@ const getHouse = async (page = 1, area = '') => {
   let house = []
 
   $('.key-list .item-mod').each(function () {
-    const name = $(this).find('.infos .lp-name .items-name').text()
-    const adress = $(this).find('.address .list-map').text()
-    const huxing = $(this).find('.huxing').text()
-    const favorPos = $(this).find('.favor-pos .price-txt').text()
-    const aroundPrice = $(this).find('.favor-pos .around-price').text()
+    const name = $(this).find('.items-name').text()
+    const address = $('.curr-area').text()
+    const huxing = $(this).find('.huxing').text().trim().replace(/\s/g, '')
+    const price = $(this).find('.price').text().trim().replace(/\s/g, '')
+    const aroundPrice = $(this).find('.around-price').text().trim().replace(/\s/g, '')
     house.push({
       name,
       huxing,
-      favorPos,
+      price,
       aroundPrice,
-      adress
+      address
     })
   })
   _house = [..._house, ...house]
