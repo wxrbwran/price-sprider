@@ -54,6 +54,7 @@
     "chromedriver": "^2.27.2",
     "concurrently": "^3.6.1",
     "copy-webpack-plugin": "^4.0.1",
+    "crawler": "^1.2.0",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.0",
     "cz-conventional-changelog": "^2.1.0",

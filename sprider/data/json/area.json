@@ -30,13 +30,13 @@
     "text": "陵城区"
   },
   {
-    "link": "https://dz.fang.anjuke.com/loupan/yucheng/",
-    "short": "yucheng",
-    "text": "禹城"
-  },
-  {
     "link": "https://dz.fang.anjuke.com/loupan/leling/",
     "short": "leling",
     "text": "乐陵"
+  },
+  {
+    "link": "https://dz.fang.anjuke.com/loupan/yucheng/",
+    "short": "yucheng",
+    "text": "禹城"
   }
 ]
