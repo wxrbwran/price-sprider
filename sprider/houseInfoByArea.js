@@ -5,9 +5,7 @@ const fs = require('fs')
 const path = require('path')
 const { sleep } = require('../utils/sleep')
 
-
 let _house = [];
-let _area = '';
 const getHouse = async (page = 1, area = '') => {
   const options = {
     uri: `https://dz.fang.anjuke.com/loupan/${area}/p${page}/`,
