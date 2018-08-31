@@ -1,25 +1,4 @@
-// 获取区域房源信息
-const Crawler = require('crawler');
-const fs = require('fs')
-const path = require('path')
-const readline = require('readline');
-
-// const readLine = () => {
-//   const uris = []
-//   const rl = readline.createInterface({
-//     input: fs.createReadStream(path.resolve(__dirname, './source/yiye.txt'))
-//   });
-//   rl.on('line', (line) => {
-//     console.log('Line from file:', line);
-//     uris.push(line);
-//   });
-//   rl.on('end', () => {
-//     console.log('end');
-//   });
-//   return uris;
-// }
-
-const lists = `http://t66y.com/htm_data/7/1806/3195413.html
+http://t66y.com/htm_data/7/1806/3195413.html
 http://t66y.com/htm_data/7/1806/3192652.html
 http://t66y.com/htm_data/7/1806/3190558.html
 http://t66y.com/htm_data/7/1806/3189341.html
@@ -73,46 +52,4 @@ http://t66y.com/htm_data/7/1805/3129733.html
 http://t66y.com/htm_data/7/1805/3132121.html
 http://t66y.com/htm_data/7/1805/3133800.html
 http://t66y.com/htm_data/7/1805/3136580.html
-http://t66y.com/htm_data/7/1805/3139610.html`;
-
-const getLists = async () => {
-  const uris = lists.replace(/\s/g, '').split('http://').filter(uri => !!uri).map(i => `http://${i}`);
-  console.log(uris);
-  const priceCrawler = new Crawler({
-    rateLimit: 5000,
-    forceUTF8: true,
-    incomingEncoding: 'gbk',
-    callback (err, res, done) {
-      // console.log(err, res, done);
-      if (err) {
-        console.log(err)
-      } else {
-        const $ = res.$
-        let urls = {}
-        const pageTitle = $('title').text().split(' - 技術討論區')[0]
-        const text = $('.tpc_content.do_not_catch').text()
-        const pairs = text.split(pageTitle)[1].split('.html')
-        urls.content = []
-        urls.title = pageTitle
-        for (const pair of pairs) {
-          const tmp = {}
-          const item = pair.split('https://')
-          if (!!item[1]) {
-            tmp.title = item[0].split(/(下载|下載|【下载|【下載)/)[0].trim()
-            tmp.url = `${item[1]}.html`
-            urls.content.push(tmp)
-          }
-        }
-        urls.text = text
-        fs.writeFileSync(path.resolve(__dirname, `./data/json/${pageTitle}.json`),
-          JSON.stringify(urls, null, 2))
-        console.log(`爬取结束，data length: ${urls.content.length}`)
-      }
-    }
-  });
-  priceCrawler.queue(uris)
-}
-
-module.exports = { getLists };
-
-getLists();
+http://t66y.com/htm_data/7/1805/3139610.html
