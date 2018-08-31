@@ -2,7 +2,7 @@
 const Crawler = require('crawler');
 const fs = require('fs')
 const path = require('path')
-const readline = require('readline');
+// const readline = require('readline');
 
 // const readLine = () => {
 //   const uris = []
@@ -19,7 +19,8 @@ const readline = require('readline');
 //   return uris;
 // }
 
-const lists = `http://t66y.com/htm_data/7/1806/3195413.html
+const lists =
+`http://t66y.com/htm_data/7/1806/3195413.html
 http://t66y.com/htm_data/7/1806/3192652.html
 http://t66y.com/htm_data/7/1806/3190558.html
 http://t66y.com/htm_data/7/1806/3189341.html
@@ -108,6 +109,7 @@ const getLists = async () => {
           JSON.stringify(urls, null, 2))
         console.log(`爬取结束，data length: ${urls.content.length}`)
       }
+      done();
     }
   });
   priceCrawler.queue(uris)
