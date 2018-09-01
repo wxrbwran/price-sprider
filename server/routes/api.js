@@ -1,6 +1,7 @@
 const router = require('koa-router')();
 const newsController = require('../controller/news');
 const positionController = require('../controller/position');
+const _91Controller = require('../controller/91data');
 
 router.prefix('/api/v0');
 
@@ -30,5 +31,9 @@ router.get('/all_positions', positionController.getAllPositions);
 router.get('/position/:id', positionController.getPositionById);
 
 router.delete('/position/:id', positionController.deletePositionById);
+
+// crawler
+router.get('/91data/handleYYBF', _91Controller.handleYYBF);
+// router.get('/91data/yiyebaofu', _91Controller.deletePositionById);
 
 module.exports = router;

@@ -1,23 +1,25 @@
 const { knex } = require('../config/db');
 const moment = require('moment');
 
-knex.schema.withSchema('web_fx').createTableIfNotExists('position', function(table) {
-    table.increments();
-    table.string('position');
-    table.integer('job_type').defaultTo(1);
-    table.string('experience');
-    table.string('location');
-    table.specificType('temptation', 'text[]');
-    table.specificType('responsibility', 'text[]');
-    table.specificType('skill', 'text[]');
-    table.specificType('professionalism', 'text[]');
-    table.boolean('is_open').defaultTo(true);
-    table.boolean('is_draft').defaultTo(false);
-    table.boolean('is_delete').defaultTo(false);
-    table.timestamp('publish_time');
-    table.timestamp('created_time');
-}).asCallback(() => {
-    console.log('table position has created!');
+knex.schema.withSchema('public').hasTable('position').then(function(exists) {
+  if (!exists) {
+    return knex.schema.withSchema('public').createTable('position', function(table) {
+      table.increments();
+      table.string('position');
+      table.integer('job_type').defaultTo(1);
+      table.string('experience');
+      table.string('location');
+      table.specificType('temptation', 'text[]');
+      table.specificType('responsibility', 'text[]');
+      table.specificType('skill', 'text[]');
+      table.specificType('professionalism', 'text[]');
+      table.boolean('is_open').defaultTo(true);
+      table.boolean('is_draft').defaultTo(false);
+      table.boolean('is_delete').defaultTo(false);
+      table.timestamp('publish_time');
+      table.timestamp('created_time');
+    });
+  }
 });
 
 const positionColumn = ['id', 'position', 'job_type', 'experience', 'location',

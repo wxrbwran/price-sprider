@@ -5,37 +5,23 @@
     "text": "经济开发区",
     "houseInfo": [
       {
-        "name": "天润和园",
-        "huxing": "户型：2室/3室建筑面积：85-117㎡",
+        "name": "龙溪香岸",
+        "huxing": "",
         "price": "",
-        "aroundPrice": "周边均价6500元/㎡",
+        "aroundPrice": "周边均价10395元/m²",
         "address": "经济开发区"
       },
       {
-        "name": "龙溪香岸",
-        "huxing": "户型：2室/3室建筑面积：70-105㎡",
-        "price": "",
-        "aroundPrice": "周边均价10005元/m²",
+        "name": "华腾御城",
+        "huxing": "户型：3室/4室建筑面积：105.51-145㎡",
+        "price": "最低9000元/㎡起",
+        "aroundPrice": "",
         "address": "经济开发区"
       },
       {
         "name": "德兴墅香苑",
         "huxing": "户型：1室/3室建筑面积：48.04-126㎡",
-        "price": "均价7500元/㎡",
-        "aroundPrice": "",
-        "address": "经济开发区"
-      },
-      {
-        "name": "星凯国际广场",
-        "huxing": "户型：2室/3室/4室建筑面积：89.8-195.72㎡",
-        "price": "均价10300元/㎡",
-        "aroundPrice": "",
-        "address": "经济开发区"
-      },
-      {
-        "name": "东海金辰华府",
-        "huxing": "户型：3室建筑面积：115㎡",
-        "price": "均价9950元/㎡",
+        "price": "均价7800元/㎡",
         "aroundPrice": "",
         "address": "经济开发区"
       },
@@ -47,9 +33,37 @@
         "address": "经济开发区"
       },
       {
+        "name": "星凯国际广场",
+        "huxing": "户型：2室/3室/4室建筑面积：89.8-195.72㎡",
+        "price": "均价10300元/㎡",
+        "aroundPrice": "",
+        "address": "经济开发区"
+      },
+      {
+        "name": "天润和园",
+        "huxing": "户型：2室/3室建筑面积：85-117㎡",
+        "price": "",
+        "aroundPrice": "周边均价6500元/㎡",
+        "address": "经济开发区"
+      },
+      {
+        "name": "康博公馆",
+        "huxing": "户型：1室/2室/3室建筑面积：50.87-120.41㎡",
+        "price": "均价12000元/㎡",
+        "aroundPrice": "",
+        "address": "经济开发区"
+      },
+      {
         "name": "新河尚城",
         "huxing": "户型：2室/3室/4室建筑面积：98.05-222.97㎡",
         "price": "均价5000元/㎡",
+        "aroundPrice": "",
+        "address": "经济开发区"
+      },
+      {
+        "name": "东海金辰华府",
+        "huxing": "户型：3室建筑面积：115㎡",
+        "price": "均价9950元/㎡",
         "aroundPrice": "",
         "address": "经济开发区"
       },
@@ -61,23 +75,9 @@
         "address": "经济开发区"
       },
       {
-        "name": "康博公馆",
-        "huxing": "户型：1室/2室/3室建筑面积：50.87-120.41㎡",
-        "price": "均价12000元/㎡",
-        "aroundPrice": "",
-        "address": "经济开发区"
-      },
-      {
-        "name": "华腾御城",
-        "huxing": "户型：3室/4室建筑面积：105.51-145㎡",
-        "price": "均价10000元/㎡",
-        "aroundPrice": "",
-        "address": "经济开发区"
-      },
-      {
         "name": "绿城百合花园",
         "huxing": "户型：商住建筑面积：84-184㎡",
-        "price": "均价15000元/㎡",
+        "price": "均价17000元/㎡",
         "aroundPrice": "",
         "address": "经济开发区"
       },
@@ -89,17 +89,17 @@
         "address": "经济开发区"
       },
       {
-        "name": "大业锦绣阳光城",
-        "huxing": "户型：3室/4室建筑面积：112-190㎡",
-        "price": "",
-        "aroundPrice": "周边均价10005元/m²",
+        "name": "蔚来城",
+        "huxing": "户型：2室建筑面积：87.74㎡",
+        "price": "均价11600元/㎡",
+        "aroundPrice": "",
         "address": "经济开发区"
       },
       {
-        "name": "蔚来城",
-        "huxing": "户型：2室建筑面积：87.74㎡",
-        "price": "",
-        "aroundPrice": "周边均价5800元/㎡",
+        "name": "崇德公馆",
+        "huxing": "户型：3室/4室/5室建筑面积：111-160㎡",
+        "price": "最低10000元/㎡起",
+        "aroundPrice": "",
         "address": "经济开发区"
       },
       {
@@ -110,20 +110,6 @@
         "address": "经济开发区"
       },
       {
-        "name": "花漫香都",
-        "huxing": "户型：2室建筑面积：118㎡",
-        "price": "",
-        "aroundPrice": "周边均价7000元/㎡",
-        "address": "经济开发区"
-      },
-      {
-        "name": "德州壹号院",
-        "huxing": "建筑面积：285618㎡",
-        "price": "均价10000元/㎡",
-        "aroundPrice": "",
-        "address": "经济开发区"
-      },
-      {
         "name": "东海福满园",
         "huxing": "户型：3室建筑面积：115-138㎡",
         "price": "均价10000元/㎡",
@@ -131,10 +117,10 @@
         "address": "经济开发区"
       },
       {
-        "name": "绿城百合广场",
-        "huxing": "",
+        "name": "花漫香都",
+        "huxing": "户型：2室建筑面积：118㎡",
         "price": "",
-        "aroundPrice": "周边均价10005元/m²",
+        "aroundPrice": "周边均价7000元/㎡",
         "address": "经济开发区"
       },
       {
@@ -145,13 +131,6 @@
         "address": "经济开发区"
       },
       {
-        "name": "崇德公馆",
-        "huxing": "户型：3室/4室/5室建筑面积：111-160㎡",
-        "price": "",
-        "aroundPrice": "周边均价10005元/m²",
-        "address": "经济开发区"
-      },
-      {
         "name": "中梁金麟府",
         "huxing": "建筑面积：100000㎡",
         "price": "",
@@ -159,31 +138,38 @@
         "address": "经济开发区"
       },
       {
-        "name": "八里庄·盛世华园",
-        "huxing": "户型：2室/3室建筑面积：89.01-98.99㎡",
+        "name": "绿城百合广场",
+        "huxing": "",
         "price": "",
-        "aroundPrice": "周边均价10005元/m²",
+        "aroundPrice": "周边均价10395元/m²",
         "address": "经济开发区"
       },
       {
-        "name": "万豪华庭公馆",
-        "huxing": "户型：3室建筑面积：115㎡",
+        "name": "大业锦绣阳光城",
+        "huxing": "户型：3室/4室建筑面积：112-190㎡",
         "price": "",
-        "aroundPrice": "周边均价10005元/m²",
+        "aroundPrice": "周边均价10395元/m²",
+        "address": "经济开发区"
+      },
+      {
+        "name": "德州壹号院",
+        "huxing": "建筑面积：285618㎡",
+        "price": "均价10000元/㎡",
+        "aroundPrice": "",
         "address": "经济开发区"
       },
       {
         "name": "紫麟苑",
         "huxing": "户型：2室建筑面积：90.06-118.35㎡",
         "price": "",
-        "aroundPrice": "周边均价10005元/m²",
+        "aroundPrice": "周边均价10395元/m²",
         "address": "经济开发区"
       },
       {
-        "name": "东海·香港城",
-        "huxing": "户型：3室/4室建筑面积：123.13-174.1㎡",
-        "price": "均价6800元/㎡",
-        "aroundPrice": "",
+        "name": "八里庄·盛世华园",
+        "huxing": "户型：2室/3室建筑面积：89.01-98.99㎡",
+        "price": "",
+        "aroundPrice": "周边均价10395元/m²",
         "address": "经济开发区"
       },
       {
@@ -204,7 +190,7 @@
         "name": "董子巷",
         "huxing": "",
         "price": "",
-        "aroundPrice": "周边均价10005元/m²",
+        "aroundPrice": "周边均价10395元/m²",
         "address": "经济开发区"
       },
       {
@@ -222,10 +208,24 @@
         "address": "经济开发区"
       },
       {
+        "name": "东海·香港城",
+        "huxing": "户型：3室/4室建筑面积：123.13-174.1㎡",
+        "price": "均价6800元/㎡",
+        "aroundPrice": "",
+        "address": "经济开发区"
+      },
+      {
         "name": "双馨苑",
         "huxing": "户型：2室/3室建筑面积：93-120.74㎡",
         "price": "",
-        "aroundPrice": "周边均价10005元/m²",
+        "aroundPrice": "周边均价10395元/m²",
+        "address": "经济开发区"
+      },
+      {
+        "name": "万豪华庭公馆",
+        "huxing": "户型：3室建筑面积：115㎡",
+        "price": "",
+        "aroundPrice": "周边均价10395元/m²",
         "address": "经济开发区"
       },
       {
@@ -243,48 +243,6 @@
     "text": "德城区",
     "houseInfo": [
       {
-        "name": "联兴星河湾",
-        "huxing": "户型：2室/3室建筑面积：76-126.88㎡",
-        "price": "均价8400元/㎡",
-        "aroundPrice": "",
-        "address": "德城区"
-      },
-      {
-        "name": "双企龙城国际",
-        "huxing": "户型：2室/3室建筑面积：80-138.55㎡",
-        "price": "",
-        "aroundPrice": "周边均价9908元/m²",
-        "address": "德城区"
-      },
-      {
-        "name": "德成名郡",
-        "huxing": "户型：3室/4室/5室建筑面积：102-193.77㎡",
-        "price": "",
-        "aroundPrice": "周边均价6800元/㎡",
-        "address": "德城区"
-      },
-      {
-        "name": "九龙半岛",
-        "huxing": "户型：2室/3室建筑面积：76.84-8844㎡",
-        "price": "",
-        "aroundPrice": "周边均价3600元/㎡",
-        "address": "德城区"
-      },
-      {
-        "name": "三和梅园",
-        "huxing": "户型：1室/2室/3室建筑面积：86.3-151.98㎡",
-        "price": "均价4600元/㎡",
-        "aroundPrice": "",
-        "address": "德城区"
-      },
-      {
-        "name": "湖滨家园",
-        "huxing": "户型：2室/3室建筑面积：80-127.94㎡",
-        "price": "均价8880元/㎡",
-        "aroundPrice": "",
-        "address": "德城区"
-      },
-      {
         "name": "东方御越莊园",
         "huxing": "户型：2室/3室建筑面积：94-124.77㎡",
         "price": "均价9900元/㎡",
@@ -292,24 +250,24 @@
         "address": "德城区"
       },
       {
-        "name": "外滩壹号",
-        "huxing": "户型：2室/3室建筑面积：80-136㎡",
-        "price": "",
-        "aroundPrice": "周边均价9908元/m²",
+        "name": "九龙半岛",
+        "huxing": "户型：2室/3室建筑面积：76.84-8844㎡",
+        "price": "均价4000元/㎡",
+        "aroundPrice": "",
+        "address": "德城区"
+      },
+      {
+        "name": "湖滨家园",
+        "huxing": "户型：2室/3室建筑面积：80-127.94㎡",
+        "price": "均价8900元/㎡",
+        "aroundPrice": "",
         "address": "德城区"
       },
       {
         "name": "华山橡树湾",
         "huxing": "户型：2室/3室/4室建筑面积：89.5-180.48㎡",
         "price": "",
-        "aroundPrice": "周边均价9908元/m²",
-        "address": "德城区"
-      },
-      {
-        "name": "鲁班御景国际",
-        "huxing": "户型：2室/3室/4室建筑面积：98.61-157㎡",
-        "price": "均价9000元/㎡",
-        "aroundPrice": "",
+        "aroundPrice": "周边均价10260元/m²",
         "address": "德城区"
       },
       {
@@ -320,16 +278,51 @@
         "address": "德城区"
       },
       {
-        "name": "德兴城上城",
-        "huxing": "户型：2室/3室建筑面积：80.77-118.96㎡",
-        "price": "均价6300元/㎡",
+        "name": "三和梅园",
+        "huxing": "户型：1室/2室/3室建筑面积：86.3-151.98㎡",
+        "price": "",
+        "aroundPrice": "周边均价4000元/㎡",
+        "address": "德城区"
+      },
+      {
+        "name": "外滩壹号",
+        "huxing": "户型：2室/3室建筑面积：80-136㎡",
+        "price": "均价8800元/㎡",
         "aroundPrice": "",
         "address": "德城区"
       },
       {
-        "name": "东北城",
-        "huxing": "",
-        "price": "均价5000元/㎡",
+        "name": "德兴城上城",
+        "huxing": "户型：2室/3室建筑面积：80.77-118.96㎡",
+        "price": "",
+        "aroundPrice": "周边均价10260元/m²",
+        "address": "德城区"
+      },
+      {
+        "name": "德成名郡",
+        "huxing": "户型：3室/4室/5室建筑面积：102-193.77㎡",
+        "price": "均价10000元/㎡",
+        "aroundPrice": "",
+        "address": "德城区"
+      },
+      {
+        "name": "双企龙城国际",
+        "huxing": "户型：2室/3室建筑面积：80-138.55㎡",
+        "price": "",
+        "aroundPrice": "周边均价10260元/m²",
+        "address": "德城区"
+      },
+      {
+        "name": "联兴星河湾",
+        "huxing": "户型：2室/3室建筑面积：76-126.88㎡",
+        "price": "",
+        "aroundPrice": "周边均价6500元/㎡",
+        "address": "德城区"
+      },
+      {
+        "name": "鲁班御景国际",
+        "huxing": "户型：2室/3室/4室建筑面积：98.61-157㎡",
+        "price": "均价9000元/㎡",
         "aroundPrice": "",
         "address": "德城区"
       },
@@ -344,6 +337,13 @@
         "name": "乐百汇广场",
         "huxing": "建筑面积：15000㎡",
         "price": "均价25000元/㎡",
+        "aroundPrice": "",
+        "address": "德城区"
+      },
+      {
+        "name": "东北城",
+        "huxing": "",
+        "price": "均价5000元/㎡",
         "aroundPrice": "",
         "address": "德城区"
       },
@@ -369,31 +369,45 @@
         "address": "德城区"
       },
       {
-        "name": "桦林·万豪公馆",
-        "huxing": "户型：2室/3室建筑面积：83.6-133.9㎡",
-        "price": "均价6500元/㎡",
-        "aroundPrice": "",
+        "name": "佳纳·书香苑",
+        "huxing": "户型：1室/2室/3室建筑面积：56-120㎡",
+        "price": "",
+        "aroundPrice": "周边均价10260元/m²",
         "address": "德城区"
       },
       {
         "name": "东海巴黎城",
         "huxing": "户型：3室建筑面积：121.77㎡",
         "price": "",
-        "aroundPrice": "周边均价9908元/m²",
+        "aroundPrice": "周边均价10260元/m²",
+        "address": "德城区"
+      },
+      {
+        "name": "天虹生活文化广场",
+        "huxing": "建筑面积：620000㎡",
+        "price": "",
+        "aroundPrice": "周边均价10260元/m²",
+        "address": "德城区"
+      },
+      {
+        "name": "南苑花城",
+        "huxing": "户型：3室建筑面积：125.19-140.1㎡",
+        "price": "",
+        "aroundPrice": "周边均价10260元/m²",
         "address": "德城区"
       },
       {
         "name": "宝林·新湖家园",
         "huxing": "户型：2室/3室建筑面积：91.34-135.91㎡",
         "price": "",
-        "aroundPrice": "周边均价9908元/m²",
+        "aroundPrice": "周边均价10260元/m²",
         "address": "德城区"
       },
       {
         "name": "阳光·国际新城",
         "huxing": "户型：2室/3室建筑面积：94.68-138.09㎡",
         "price": "",
-        "aroundPrice": "周边均价9908元/m²",
+        "aroundPrice": "周边均价10260元/m²",
         "address": "德城区"
       },
       {
@@ -404,9 +418,9 @@
         "address": "德城区"
       },
       {
-        "name": "百卉新城",
-        "huxing": "户型：2室/3室建筑面积：90-125㎡",
-        "price": "均价2300元/㎡",
+        "name": "振华星城",
+        "huxing": "户型：2室建筑面积：100㎡",
+        "price": "均价6300元/㎡",
         "aroundPrice": "",
         "address": "德城区"
       },
@@ -418,34 +432,6 @@
         "address": "德城区"
       },
       {
-        "name": "百卉社区.旭光城",
-        "huxing": "建筑面积：250000㎡",
-        "price": "",
-        "aroundPrice": "周边均价9908元/m²",
-        "address": "德城区"
-      },
-      {
-        "name": "南苑花城",
-        "huxing": "户型：3室建筑面积：125.19-140.1㎡",
-        "price": "",
-        "aroundPrice": "周边均价9908元/m²",
-        "address": "德城区"
-      },
-      {
-        "name": "佳纳·书香苑",
-        "huxing": "户型：1室/2室/3室建筑面积：56-120㎡",
-        "price": "",
-        "aroundPrice": "周边均价9908元/m²",
-        "address": "德城区"
-      },
-      {
-        "name": "振华星城",
-        "huxing": "户型：2室建筑面积：100㎡",
-        "price": "均价6300元/㎡",
-        "aroundPrice": "",
-        "address": "德城区"
-      },
-      {
         "name": "银座财富中心",
         "huxing": "建筑面积：250000㎡",
         "price": "均价7500元/㎡",
@@ -453,17 +439,31 @@
         "address": "德城区"
       },
       {
-        "name": "尚城国际",
-        "huxing": "",
+        "name": "百卉社区.旭光城",
+        "huxing": "建筑面积：250000㎡",
         "price": "",
-        "aroundPrice": "周边均价9908元/m²",
+        "aroundPrice": "周边均价10260元/m²",
         "address": "德城区"
       },
       {
-        "name": "天虹生活文化广场",
-        "huxing": "建筑面积：620000㎡",
+        "name": "桦林·万豪公馆",
+        "huxing": "户型：2室/3室建筑面积：83.6-133.9㎡",
+        "price": "均价6500元/㎡",
+        "aroundPrice": "",
+        "address": "德城区"
+      },
+      {
+        "name": "百卉新城",
+        "huxing": "户型：2室/3室建筑面积：90-125㎡",
+        "price": "均价2300元/㎡",
+        "aroundPrice": "",
+        "address": "德城区"
+      },
+      {
+        "name": "尚城国际",
+        "huxing": "",
         "price": "",
-        "aroundPrice": "周边均价9908元/m²",
+        "aroundPrice": "周边均价10260元/m²",
         "address": "德城区"
       }
     ]
@@ -476,15 +476,8 @@
       {
         "name": "运河鑫城",
         "huxing": "户型：2室/3室建筑面积：87-134㎡",
-        "price": "均价6400元/㎡",
-        "aroundPrice": "",
-        "address": "运河开发区"
-      },
-      {
-        "name": "鑫芦悦城",
-        "huxing": "户型：2室/3室建筑面积：89-119.78㎡",
-        "price": "均价5000元/㎡",
-        "aroundPrice": "",
+        "price": "",
+        "aroundPrice": "周边均价4850元/㎡",
         "address": "运河开发区"
       },
       {
@@ -495,10 +488,17 @@
         "address": "运河开发区"
       },
       {
+        "name": "鑫芦悦城",
+        "huxing": "户型：2室/3室建筑面积：89-119.78㎡",
+        "price": "",
+        "aroundPrice": "周边均价4500元/㎡",
+        "address": "运河开发区"
+      },
+      {
         "name": "瑞华新都汇",
         "huxing": "户型：2室/3室建筑面积：78-161㎡",
         "price": "",
-        "aroundPrice": "周边均价6467元/m²",
+        "aroundPrice": "周边均价8497元/m²",
         "address": "运河开发区"
       },
       {
@@ -523,17 +523,10 @@
         "address": "运河开发区"
       },
       {
-        "name": "地鑫·运河人家",
-        "huxing": "户型：2室/3室建筑面积：74.43-114.14㎡",
-        "price": "",
-        "aroundPrice": "周边均价6467元/m²",
-        "address": "运河开发区"
-      },
-      {
         "name": "三秀公馆",
         "huxing": "户型：2室/3室建筑面积：89.2-99㎡",
         "price": "",
-        "aroundPrice": "周边均价6467元/m²",
+        "aroundPrice": "周边均价10217元/m²",
         "address": "运河开发区"
       },
       {
@@ -551,6 +544,13 @@
         "address": "运河开发区"
       },
       {
+        "name": "地鑫·运河人家",
+        "huxing": "户型：2室/3室建筑面积：74.43-114.14㎡",
+        "price": "",
+        "aroundPrice": "周边均价10217元/m²",
+        "address": "运河开发区"
+      },
+      {
         "name": "衡德商贸城",
         "huxing": "建筑面积：180000㎡",
         "price": "均价6600元/㎡",
@@ -565,24 +565,24 @@
     "text": "夏津",
     "houseInfo": [
       {
-        "name": "德兴翰林苑",
-        "huxing": "户型：2室建筑面积：74.87㎡",
+        "name": "荣兆·锦宸",
+        "huxing": "户型：2室建筑面积：85㎡",
         "price": "",
-        "aroundPrice": "周边均价5976元/m²",
+        "aroundPrice": "周边均价6013元/m²",
         "address": "夏津"
       },
       {
         "name": "德兴银山龙盘",
         "huxing": "户型：3室建筑面积：102-129㎡",
         "price": "",
-        "aroundPrice": "周边均价5976元/m²",
+        "aroundPrice": "周边均价6013元/m²",
         "address": "夏津"
       },
       {
-        "name": "荣兆·锦宸",
-        "huxing": "户型：2室建筑面积：85㎡",
+        "name": "德兴翰林苑",
+        "huxing": "户型：2室建筑面积：74.87㎡",
         "price": "",
-        "aroundPrice": "周边均价5976元/m²",
+        "aroundPrice": "周边均价6013元/m²",
         "address": "夏津"
       }
     ]
@@ -592,6 +592,13 @@
     "short": "qita",
     "text": "其他",
     "houseInfo": [
+      {
+        "name": "齐河连城智谷",
+        "huxing": "建筑面积：550000㎡",
+        "price": "",
+        "aroundPrice": "周边均价10217元/m²",
+        "address": "其他"
+      },
       {
         "name": "国科国际高尔夫别墅",
         "huxing": "建筑面积：1270000㎡",
@@ -610,21 +617,21 @@
         "name": "理想镇",
         "huxing": "户型：别墅建筑面积：36.09-220㎡",
         "price": "",
-        "aroundPrice": "周边均价8140元/m²",
+        "aroundPrice": "周边均价8239元/m²",
         "address": "陵城区"
       }
     ]
   },
   {
-    "link": "https://dz.fang.anjuke.com/loupan/yucheng/",
-    "short": "yucheng",
-    "text": "禹城",
-    "houseInfo": []
-  },
-  {
     "link": "https://dz.fang.anjuke.com/loupan/leling/",
     "short": "leling",
     "text": "乐陵",
+    "houseInfo": []
+  },
+  {
+    "link": "https://dz.fang.anjuke.com/loupan/yucheng/",
+    "short": "yucheng",
+    "text": "禹城",
     "houseInfo": []
   }
 ]

@@ -1,22 +1,24 @@
 const { knex} = require('../config/db');
 const moment = require('moment');
 
-knex.schema.withSchema('web_fx').createTableIfNotExists('news', function(table) {
-    table.increments();
-    table.text('title').notNull();
-    table.text('description').notNull();
-    table.text('content').notNull();
-    table.string('cover');
-    table.string('news_type').defaultTo('latest');
-    table.boolean('is_open').defaultTo(true);
-    table.boolean('is_top').defaultTo(false);
-    table.boolean('is_draft').defaultTo(false);
-    table.boolean('is_delete').defaultTo(false);
-    table.string('publish_time_type');
-    table.timestamp('publish_time');
-    table.timestamp('created_time');
-}).asCallback(() => {
-    console.log('table news has created!');
+knex.schema.withSchema('public').hasTable('news').then(function(exists) {
+  if (!exists) {
+    return knex.schema.withSchema('public').createTable('news', function(table) {
+      table.increments();
+      table.text('title').notNull();
+      table.text('description').notNull();
+      table.text('content').notNull();
+      table.string('cover');
+      table.string('news_type').defaultTo('latest');
+      table.boolean('is_open').defaultTo(true);
+      table.boolean('is_top').defaultTo(false);
+      table.boolean('is_draft').defaultTo(false);
+      table.boolean('is_delete').defaultTo(false);
+      table.string('publish_time_type');
+      table.timestamp('publish_time');
+      table.timestamp('created_time');
+    });
+  }
 });
 
 const articleColumn = ['id', 'title', 'is_open', 'is_top', 'is_draft', 'news_type',

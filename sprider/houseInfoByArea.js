@@ -5,9 +5,7 @@ const fs = require('fs')
 const path = require('path')
 const { sleep } = require('../utils/sleep')
 
-
 let _house = [];
-let _area = '';
 const getHouse = async (page = 1, area = '') => {
   const options = {
     uri: `https://dz.fang.anjuke.com/loupan/${area}/p${page}/`,
@@ -37,7 +35,7 @@ const getHouse = async (page = 1, area = '') => {
     console.log(`${area}共有${_house.length}条数据`)
     await sleep(1000)
     page++;
-    await getHouse(page, _area)
+    await getHouse(page, area)
   } else {
     console.log(`爬完了！${_house.length}`)
     return _house
@@ -46,19 +44,20 @@ const getHouse = async (page = 1, area = '') => {
 
 // 拿到了地区的分区，现在去检索每个分区下的房价
 const getAreaDetail = async () => {
-  const area = require(path.resolve(__dirname, './data/json/area.json'))
-  for (let i = 0; i < area.length; i++) {
+  const areas = require(path.resolve(__dirname, './data/json/area.json'))
+  for (let i = 0; i < areas.length; i++) {
     _house = []
-    console.log(`正在爬取${area[i].text}`)
-    _area = area[i].short;
+    console.log(`正在爬取${areas[i].text}`)
+    const _area = areas[i].short;
     console.log(_area)
-    await getHouse(1, area[i].short)
-    area[i].houseInfo = _house
+    const a = await getHouse(1, _area)
+    console.log('a', a);
+    areas[i].houseInfo = _house
   }
   fs.writeFileSync(path.resolve(__dirname, './data/json/AreaHouse.json'),
-    JSON.stringify(area, null, 2), 'utf-8')
+    JSON.stringify(areas, null, 2), 'utf-8')
 }
 
 module.exports = { getAreaDetail }
 
-// getAreaDetail()
+getAreaDetail()
