@@ -155,21 +155,21 @@ module.exports = {
     },
 
     editArticleById: async (ctx, next) => {
-        const { id } = ctx.params;
-        try {
-            await knex('news')
-                .update(ctx.request.body)
-                .where({id});
-            return ctx.body = {
-                status: 'success',
-                data: null,
-            };
-        } catch (e) {
-            return ctx.body = {
-                status: 'fail',
-                data: e.stack,
-            };
-        }
+      const { id } = ctx.params;
+      try {
+          await knex('news')
+              .update(ctx.request.body)
+              .where({id});
+          return ctx.body = {
+              status: 'success',
+              data: null,
+          };
+      } catch (e) {
+          return ctx.body = {
+              status: 'fail',
+              data: e.stack,
+          };
+      }
     },
 
     deleteArticleById: async (ctx, next) => {

@@ -5,93 +5,8 @@ const path = require('path')
 const { transNumber } = require('../utils/transNumber')
 
 console.log(transNumber)
-// const readLine = () => {
-//   const uris = []
-//   const rl = readline.createInterface({
-//     input: fs.createReadStream(path.resolve(__dirname, './source/yiye.txt'))
-//   });
-//   rl.on('line', (line) => {
-//     console.log('Line from file:', line);
-//     uris.push(line);
-//   });
-//   rl.on('end', () => {
-//     console.log('end');
-//   });
-//   return uris;
-// }
 
-const lists =
-`http://t66y.com/htm_data/7/1806/3195413.html
-http://t66y.com/htm_data/7/1806/3192652.html
-http://t66y.com/htm_data/7/1806/3190558.html
-http://t66y.com/htm_data/7/1806/3189341.html
-http://t66y.com/htm_data/7/1806/3185991.html
-http://t66y.com/htm_data/7/1806/3183157.html
-http://t66y.com/htm_data/7/1806/3181471.html
-http://t66y.com/htm_data/7/1806/3179101.html
-http://t66y.com/htm_data/7/1806/3177231.html
-http://t66y.com/htm_data/7/1806/3174555.html
-http://t66y.com/htm_data/7/1806/3172798.html
-http://t66y.com/htm_data/7/1806/3169726.html
-http://t66y.com/htm_data/7/1806/3168022.html
-http://t66y.com/htm_data/7/1806/3165312.html
-http://t66y.com/htm_data/7/1806/3163556.html
-http://t66y.com/htm_data/7/1805/3160618.html
-http://t66y.com/htm_data/7/1805/3158924.html
-http://t66y.com/htm_data/7/1805/3155921.html
-http://t66y.com/htm_data/7/1805/3154561.html
-http://t66y.com/htm_data/7/1805/3151534.html
-http://t66y.com/htm_data/7/1805/3149887.html
-http://t66y.com/htm_data/7/1805/3146995.html
-http://t66y.com/htm_data/7/1805/3145322.html
-http://t66y.com/htm_data/7/1805/3142531.html
-http://t66y.com/htm_data/7/1805/3140610.html
-http://t66y.com/htm_data/7/1807/3225843.html
-http://t66y.com/htm_data/7/1807/3223143.html
-http://t66y.com/htm_data/7/1807/3221544.html
-http://t66y.com/htm_data/7/1807/3219187.html
-http://t66y.com/htm_data/7/1807/3217123.html
-http://t66y.com/htm_data/7/1807/3214281.html
-http://t66y.com/htm_data/7/1807/3212660.html
-http://t66y.com/htm_data/7/1807/3210391.html
-http://t66y.com/htm_data/7/1807/3208299.html
-http://t66y.com/htm_data/7/1807/3206285.html
-http://t66y.com/htm_data/7/1807/3202388.html
-http://t66y.com/htm_data/7/1807/3199534.html
-http://t66y.com/htm_data/7/1807/3196757.html
-http://t66y.com/htm_data/7/1804/3103967.html
-http://t66y.com/htm_data/7/1804/3105576.html
-http://t66y.com/htm_data/7/1804/3107476.html
-http://t66y.com/htm_data/7/1804/3109932.html
-http://t66y.com/htm_data/7/1804/3112279.html
-http://t66y.com/htm_data/7/1804/3114594.html
-http://t66y.com/htm_data/7/1804/3116417.html
-http://t66y.com/htm_data/7/1804/3119186.html
-http://t66y.com/htm_data/7/1804/3120863.html
-http://t66y.com/htm_data/7/1804/3124061.html
-http://t66y.com/htm_data/7/1804/3125423.html
-http://t66y.com/htm_data/7/1805/3127908.html
-http://t66y.com/htm_data/7/1805/3129733.html
-http://t66y.com/htm_data/7/1805/3132121.html
-http://t66y.com/htm_data/7/1805/3133800.html
-http://t66y.com/htm_data/7/1805/3136580.html
-http://t66y.com/htm_data/7/1805/3139610.html
-http://t66y.com/htm_data/7/1808/3232860.html
-http://t66y.com/htm_data/7/1808/3233782.html
-http://t66y.com/htm_data/7/1808/3234297.html
-http://t66y.com/htm_data/7/1808/3235698.html
-http://t66y.com/htm_data/7/1808/3238220.html
-http://t66y.com/htm_data/7/1808/3239997.html
-http://t66y.com/htm_data/7/1808/3242456.html
-http://t66y.com/htm_data/7/1808/3244196.html
-http://t66y.com/htm_data/7/1808/3246842.html
-http://t66y.com/htm_data/7/1808/3248453.html
-http://t66y.com/htm_data/7/1808/3250796.html
-http://t66y.com/htm_data/7/1808/3252795.html
-http://t66y.com/htm_data/7/1808/3254887.html
-http://t66y.com/htm_data/7/1808/3257080.html
-http://t66y.com/htm_data/7/1808/3259356.html
-http://t66y.com/htm_data/7/1808/3261104.html`;
+const lists = 'http://t66y.com/htm_data/7/1809/3263754.html'
 
 const getLists = async () => {
   const uris = lists.replace(/\s/g, '').split('http://').filter(uri => !!uri).map(i => `http://${i}`);
@@ -119,16 +34,21 @@ const getLists = async () => {
           const tmpArr = pageTitle.split('月');
           console.log(tmpArr)
           urls.month = transNumber[tmpArr[0].slice(-1)]
-          urls.season = transNumber[tmpArr[1].split('季')[0].slice(-1)]
+          urls.season = transNumber[tmpArr[1].split('季')[0].split('第')[1]]
           for (const pair of pairs) {
             const tmp = {}
             const item = pair.split('https://')
             if (!!item[1]) {
-              tmp.title = item[0].split(/(下载|下載|【下载|【下載)/)[0].replace(/(=|-)/g, '').trim()
+              tmp.title = item[0]
+                .split(/(下载|下載|【下载|【下載)/)[0]
+                .replace(/(=|-)/g, '')
+                .split(/(【影片大小】|【影片格式】|【语言字幕】|【资源格式】)/)[0]
+                .trim()
               tmp.url = `${item[1]}.html`
+              tmp.year = new Date().getFullYear();
               tmp.month = urls.month;
               tmp.season = urls.season;
-              tmp.pageTitle = pageTitle;
+              tmp.page_title = pageTitle;
               urls.content.push(tmp)
             }
           }

@@ -33,7 +33,10 @@ router.get('/position/:id', positionController.getPositionById);
 router.delete('/position/:id', positionController.deletePositionById);
 
 // crawler
-router.get('/91data/handleYYBF', _91Controller.handleYYBF);
-// router.get('/91data/yiyebaofu', _91Controller.deletePositionById);
+router.post('/91data/handleYYBF', _91Controller.handleYYBF);
+router.get('/91data/getAllTitles', _91Controller.getAllTitles);
+router.get('/91data/getSelectionParams', _91Controller.getSelectionParams);
+router.get('/91data/getDistinctSeasonByMonth', _91Controller.getDistinctSeasonByMonth);
+router.post('/91data/editTitleStatusById', _91Controller.editTitleStatusById);
 
 module.exports = router;
