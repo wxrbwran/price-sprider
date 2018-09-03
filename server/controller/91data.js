@@ -1,8 +1,11 @@
 const { knex} = require('../config/db');
 const moment = require('moment');
+const cheerio = require('cheerio')
+const request = require('request-promise')
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob')
+const axios = require('axios')
 
 knex.schema.withSchema('public').hasTable('yiyebaofu').then(function(exists) {
   console.log('table yiyebaofu', exists);
@@ -86,6 +89,59 @@ module.exports = {
           data: e.stack,
         };
       }
+    }
+  },
+  // http://127.0.0.1:26339/open/createTask
+  crawlYifileFileLink: async (ctx) => {
+    try {
+      const itemArr = await knex('yiyebaofu')
+        .where({ is_downloaded: false })
+        .orderBy('month')
+        .orderBy('season')
+        .limit(1)
+        .select()
+      const item = itemArr[0]
+      const options = {
+        uri: `http://${item.url}`,
+        transform: body => cheerio.load(body)
+      }
+      const $ = await request(options)
+      const links = []
+      console.log($)
+      console.log($('#vipdown00001').text())
+      $('#vipdown00001 a').each(function () {
+        const link = $(this).attr('href');
+        console.log(link)
+        links.push(link);
+      })
+      console.log(links);
+      ctx.body = {
+        status: 'success',
+        data: links,
+      };
+    } catch (e) {
+      ctx.body = {
+        status: 'fail',
+        data: e.stack,
+      };
+    }
+  },
+  downloadFile: async (ctx) => {
+    // 需开启proxyee-down
+    console.log(ctx.request.body)
+    try {
+      const res = axios.post('http://127.0.0.1:26339/open/createTask',
+        ctx.request.body);
+      console.log(res);
+      ctx.body = {
+        status: 'success',
+        data: res,
+      }
+    } catch (e) {
+      ctx.body = {
+        status: 'fail',
+        data: e,
+      };
     }
   },
   getSelectionParams: async (ctx) => {

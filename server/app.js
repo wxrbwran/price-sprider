@@ -1,5 +1,4 @@
 const Koa = require('koa');
-// require('babel-core/register')({});
 const app = new Koa();
 const middleware = require('./middleware');
 
