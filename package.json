@@ -126,5 +126,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "devDependencies": {
+    "superagent": "^3.8.3"
   }
 }

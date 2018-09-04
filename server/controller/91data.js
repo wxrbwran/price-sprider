@@ -2,6 +2,7 @@ const { knex} = require('../config/db');
 const moment = require('moment');
 const cheerio = require('cheerio')
 const request = require('request-promise')
+const superagent = require('superagent')
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob')
@@ -101,23 +102,57 @@ module.exports = {
         .limit(1)
         .select()
       const item = itemArr[0]
+
+      const browserMsg={
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
+        'Content-Type':'application/x-www-form-urlencoded'
+      };
+
+      //访问登录接口获取cookie
+      function getLoginCookie() {
+        return new Promise(function (resolve, reject) {
+          superagent.post('http://www.yifile.com/account.php')
+            .set(browserMsg)
+            .type('form')
+            .send({
+              action: 'login',
+              task: 'login',
+              ref: 'http://www.yifile.com/',
+              formhash: 'c9821bf7',
+              username: 'wxrbw@qq.com',
+              password: 'qingfei775',
+              remember:1,
+            })
+            .redirects(5)
+            .end(function (err, response) {
+            //获取cookie
+            // const cookie = response.headers["set-cookie"];
+            resolve(response);
+          });
+        });
+      }
+
       const options = {
         uri: `http://${item.url}`,
-        transform: body => cheerio.load(body)
+        transform: body => cheerio.load(body),
       }
-      const $ = await request(options)
-      const links = []
-      console.log($)
-      console.log($('#vipdown00001').text())
-      $('#vipdown00001 a').each(function () {
-        const link = $(this).attr('href');
-        console.log(link)
-        links.push(link);
-      })
-      console.log(links);
+      const res = await getLoginCookie()
+console.log(res);
+      // const $ = await request(options)
+
+      // const links = []
+      // console.log($('#vipdown00001').text())
+      // $('#vipdown00001 a').each(function () {
+      //   const link = $(this).attr('href');
+      //   console.log(link)
+      //   links.push(link);
+      // })
+      // console.log(links);
       ctx.body = {
         status: 'success',
-        data: links,
+        // data: links,
+        // item,
+        res
       };
     } catch (e) {
       ctx.body = {
