@@ -3,10 +3,6 @@ const fs = require('fs')
 const path = require('path')
 const { transNumber } = require('../utils/transNumber')
 
-console.log(transNumber)
-
-
-
 const getLists = () => {
   let urls = {}
   const pageTitle = ``;
