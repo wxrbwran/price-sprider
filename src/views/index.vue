@@ -29,6 +29,23 @@
     <div class="index-table">
       <Table border :columns="columns" :data="titles"></Table>
     </div>
+    <Modal
+      v-model="isShowModal"
+      title="下载选项"
+      ok-text="下载"
+      @on-ok="downloadFile">
+      <Form :label-width="80">
+        <FormItem label="提示">
+          <strong>需开启Proxyee-down</strong>
+        </FormItem>
+        <FormItem label="标题">
+          <Input v-model="downloadTitle"></Input>
+        </FormItem>
+        <FormItem label="链接">
+          <Input v-model="downloadLink"></Input>
+        </FormItem>
+      </Form>
+    </Modal>
   </div>
 </template>
 <script>
@@ -46,6 +63,9 @@
         seasons: [],
         keyword: null,
         isHidden: true,
+        isShowModal: false,
+        downloadTitle: null,
+        downloadLink: '',
         page_at: 1,
         total: 0,
         columns: [
@@ -171,7 +191,27 @@
         this.isHidden = !this.isHidden;
       },
       writeClicpboard(text) {
+        this.isShowModal = true
+        this.downloadTitle = text
         clipboard.writeText(text);
+      },
+      downloadFile () {
+        util.ajax.post('91data/downloadFile', {
+          "request": {
+            "url": this.downloadLink,
+          },
+          "fileName": this.downloadTitle,
+          "filePath": '/Volumes/src/Download/zip',
+          "connections": 32,
+          "unzipFlag": 0,
+        }).then(res => {
+          console.log(res)
+        }).catch(err => {
+          console.log(err)
+        })
+        setTimeout(() => {
+          this.isShowModal = false;
+        }, 2000);
       },
       fetchSelectionParams (param = 'month') {
         util.ajax.get('91data/getSelectionParams', {

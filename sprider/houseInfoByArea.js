@@ -14,9 +14,7 @@ const getHouse = async (page = 1, area = '') => {
   console.log(`正在爬${options.uri}`)
   const $ = await request(options)
   let house = []
-
   $('.key-list .item-mod').each(function () {
-  	// console.log($(this).text())
     const name = $(this).find('.items-name').text()
     const address = $('.curr-area').text()
     const huxing = $(this).find('.huxing').text().trim().replace(/\s/g, '')
