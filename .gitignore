@@ -18,3 +18,4 @@ selenium-debug.log
 *.lock
 server/public
 /sprider/data
+/demo/screen_shot

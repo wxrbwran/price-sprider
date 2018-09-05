@@ -102,7 +102,6 @@ module.exports = {
         .limit(1)
         .select()
       const item = itemArr[0]
-
       const browserMsg={
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
         'Content-Type':'application/x-www-form-urlencoded'
@@ -137,9 +136,8 @@ module.exports = {
         transform: body => cheerio.load(body),
       }
       const res = await getLoginCookie()
-console.log(res);
+      console.log(res);
       // const $ = await request(options)
-
       // const links = []
       // console.log($('#vipdown00001').text())
       // $('#vipdown00001 a').each(function () {
