@@ -1,21 +1,10 @@
 // 获取区域房源信息
 const Crawler = require('crawler');
-const cheerio = require('cheerio')
-const iconvLite = require('iconv-lite')
-const request = require('request-promise')
 const fs = require('fs')
 const path = require('path')
 const { transNumber } = require('../utils/transNumber')
 
 const lists = 'http://t66y.com/htm_data/7/1809/3265847.html'
-
-// var charset = options.incomingEncoding || self._parseCharset(response);
-// response.charset = charset;
-// log('debug','Charset ' + charset);
-//
-// if (charset !== 'utf-8' && charset !== 'ascii') {// convert response.body into 'utf-8' encoded buffer
-//   response.body = iconvLite.decode(response.body, charset);
-// }
 
 function getPageAsync(uri) {
   return new Promise(function(resolve, reject){
