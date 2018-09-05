@@ -4,6 +4,7 @@
       <div class="index-action">
         <Button @click="loadNewData">加载数据</Button>
         <Button @click="toggleHide">切换</Button>
+        <Button @click="toggleModal">下载框</Button>
       </div>
       <div class="index-selections">
         <Select v-model="month" clearable style="width:75px" placeholder="月份" @on-change="handleChangeMonth">
@@ -51,6 +52,7 @@
 <script>
   import util from '../libs/util'
   import clipboard from "clipboard-polyfill"
+
   export default {
     data () {
       return {
@@ -120,12 +122,12 @@
                 'class': 'clip_title',
                 attrs: {
                   'data-clipboard-text': `${params.row.title}.zip`,
-                  href: `http://${params.row.url}`,
-                  target: '_blank'
+                  // href: `http://${params.row.url}`,
+                  // target: '_blank'
                 },
                 on: {
                   click() {
-                    self.writeClicpboard(`${params.row.title}.zip`)
+                    self.writeClicpboard(`${params.row.title}.zip`, `http://${params.row.url}`)
                   },
                 }
               }, '去下载')
@@ -190,10 +192,14 @@
       toggleHide () {
         this.isHidden = !this.isHidden;
       },
-      writeClicpboard(text) {
+      toggleModal () {
+        this.isShowModal = !this.isShowModal;
+      },
+      writeClicpboard(text, url) {
         this.isShowModal = true
         this.downloadTitle = text
         clipboard.writeText(text);
+        const win = window.open(url)
       },
       downloadFile () {
         util.ajax.post('91data/downloadFile', {
@@ -206,6 +212,8 @@
           "unzipFlag": 0,
         }).then(res => {
           console.log(res)
+          this.downloadLink = ''
+          this.downloadTitle = ''
         }).catch(err => {
           console.log(err)
         })

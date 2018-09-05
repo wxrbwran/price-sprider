@@ -1,38 +1,42 @@
 // 获取区域房源信息
 const Crawler = require('crawler');
+const cheerio = require('cheerio')
+const iconvLite = require('iconv-lite')
+const request = require('request-promise')
 const fs = require('fs')
 const path = require('path')
 const { transNumber } = require('../utils/transNumber')
 
-console.log(transNumber)
+const lists = 'http://t66y.com/htm_data/7/1809/3265847.html'
 
-const lists = 'http://t66y.com/htm_data/7/1809/3263754.html'
+// var charset = options.incomingEncoding || self._parseCharset(response);
+// response.charset = charset;
+// log('debug','Charset ' + charset);
+//
+// if (charset !== 'utf-8' && charset !== 'ascii') {// convert response.body into 'utf-8' encoded buffer
+//   response.body = iconvLite.decode(response.body, charset);
+// }
 
-const getLists = async () => {
-  const uris = lists.replace(/\s/g, '').split('http://').filter(uri => !!uri).map(i => `http://${i}`);
-  console.log(uris);
-  for (const uri of uris) {
+function getPageAsync(uri) {
+  return new Promise(function(resolve, reject){
+    console.log('正在爬取....');
     const priceCrawler = new Crawler({
       rateLimit: 5000,
       forceUTF8: true,
       incomingEncoding: 'gbk',
-      callback (err, res, done) {
+      callback (err, res) {
         if (err) {
           console.log(err)
+          reject(new Error(err))
         } else {
           let urls = {}
           let $ = res.$
           const pageTitle = $('title').text().split(' - 技術討論區')[0]
-          $('.tpc_content.do_not_catch a').each(function (item) {
-            $(this).innerText = $(this).attr('href');
-            console.log($(this).attr('href'));
-          })
           const text = $('.tpc_content.do_not_catch').text()
           const pairs = text.split(pageTitle)[1] ? text.split(pageTitle)[1].split('.html') : text.split('.html')
           urls.content = []
           urls.title = pageTitle
           const tmpArr = pageTitle.split('月');
-          console.log(tmpArr)
           urls.month = transNumber[tmpArr[0].slice(-1)]
           urls.season = transNumber[tmpArr[1].split('季')[0].split('第')[1]]
           for (const pair of pairs) {
@@ -56,11 +60,22 @@ const getLists = async () => {
           fs.writeFileSync(path.resolve(__dirname, `./data/cl/${pageTitle}.json`),
             JSON.stringify(urls, null, 2))
           console.log(`爬取结束，data length: ${urls.content.length}`)
+          resolve();
         }
       }
     });
     priceCrawler.queue(uri)
+  })
+}
+
+
+const getLists = async () => {
+  const uris = lists.replace(/\s/g, '').split('http://').filter(uri => !!uri).map(i => `http://${i}`);
+  for (const uri of uris) {
+    await getPageAsync(uri)
+    console.log(1)
   }
+  console.log(2)
 }
 
 module.exports = { getLists };
