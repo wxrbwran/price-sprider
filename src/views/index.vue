@@ -210,10 +210,8 @@
           "filePath": '/Volumes/src/Download/zip',
           "connections": 32,
           "unzipFlag": 0,
-        }).then(res => {
-          console.log(res)
+        }).then(() => {
           this.downloadLink = ''
-          this.downloadTitle = ''
         }).catch(err => {
           console.log(err)
         })

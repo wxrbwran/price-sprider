@@ -4,7 +4,7 @@ const fs = require('fs')
 const path = require('path')
 const { transNumber } = require('../utils/transNumber')
 
-const lists = 'http://t66y.com/htm_data/7/1809/3265847.html'
+const lists = 'http://t66y.com/htm_data/7/1809/3269867.html'
 
 function getPageAsync(uri) {
   return new Promise(function(resolve, reject){
@@ -36,6 +36,7 @@ function getPageAsync(uri) {
                 .split(/(下载|下載|【下载|【下載)/)[0]
                 .replace(/(=|-)/g, '')
                 .split(/(【影片大小】|【影片格式】|【语言字幕】|【资源格式】)/)[0]
+                .split(/(【影片名称】：|【影片名稱】:)/).slice(-1)[0]
                 .trim()
               tmp.url = `${item[1]}.html`
               tmp.year = new Date().getFullYear();

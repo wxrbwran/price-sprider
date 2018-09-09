@@ -8,10 +8,10 @@ const path = require('path');
 const glob = require('glob')
 const axios = require('axios')
 
-knex.schema.withSchema('public').hasTable('yiyebaofu').then(function(exists) {
+knex.schema.withSchema('wxr').hasTable('yiyebaofu').then(function(exists) {
   console.log('table yiyebaofu', exists);
   if (!exists) {
-    return knex.schema.withSchema('public').createTable('yiyebaofu', function(table) {
+    return knex.schema.withSchema('wxr').createTable('yiyebaofu', function(table) {
       table.increments();
       table.text('page_title');
       table.text('title');
