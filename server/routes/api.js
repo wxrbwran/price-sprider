@@ -35,7 +35,6 @@ router.delete('/position/:id', positionController.deletePositionById);
 // crawler
 router.post('/91data/handleYYBF', _91Controller.handleYYBF);
 router.post('/91data/downloadFile', _91Controller.downloadFile);
-router.post('/91data/crawlYifileFileLink', _91Controller.crawlYifileFileLink);
 
 router.get('/91data/getAllTitles', _91Controller.getAllTitles);
 router.get('/91data/getSelectionParams', _91Controller.getSelectionParams);

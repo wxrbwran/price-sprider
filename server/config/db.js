@@ -41,7 +41,13 @@ const knex = require('knex')({
   connection: proConfig,
   acquireConnectionTimeout: 10000
 });
+const devKnex = require('knex')({
+  client: 'pg',
+  searchPath: 'wxr',
+  connection: devConfig,
+  acquireConnectionTimeout: 10000
+});
 
 module.exports = {
-    knex
+    knex, devKnex
 };

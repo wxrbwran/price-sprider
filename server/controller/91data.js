@@ -1,15 +1,12 @@
-const { knex} = require('../config/db');
+const { knex, devKnex } = require('../config/db');
 const moment = require('moment');
-const cheerio = require('cheerio')
-const request = require('request-promise')
-const superagent = require('superagent')
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob')
 const axios = require('axios')
 
 knex.schema.withSchema('wxr').hasTable('yiyebaofu').then(function(exists) {
-  console.log('table yiyebaofu', exists);
+  console.log('prod table yiyebaofu', exists);
   if (!exists) {
     return knex.schema.withSchema('wxr').createTable('yiyebaofu', function(table) {
       table.increments();
@@ -24,7 +21,28 @@ knex.schema.withSchema('wxr').hasTable('yiyebaofu').then(function(exists) {
       table.text('download_link');
       table.text('crawler_note');
       table.text('origin_file_name');
-      console.log('table yiyebaofu has created!');
+      console.log('prod table yiyebaofu has created!');
+    });
+  }
+});
+
+devKnex.schema.withSchema('wxr').hasTable('yiyebaofu').then(function(exists) {
+  console.log('dev table yiyebaofu', exists);
+  if (!exists) {
+    return devKnex.schema.withSchema('wxr').createTable('yiyebaofu', function(table) {
+      table.increments();
+      table.text('page_title');
+      table.text('title');
+      table.text('url').unique().notNull();
+      table.integer('year').defaultTo(new Date().getFullYear());
+      table.integer('month');
+      table.integer('season');
+      table.boolean('is_downloaded').defaultTo(false);
+      table.timestamp('created_time').defaultTo(knex.fn.now());
+      table.text('download_link');
+      table.text('crawler_note');
+      table.text('origin_file_name');
+      console.log('dev table yiyebaofu has created!');
     });
   }
 });
@@ -72,6 +90,8 @@ module.exports = {
           filterYYBF = filterYYBF.filter(i => (i.title !== d.title || i.url !== d.url))
         }
         await knex('yiyebaofu').returning('id').insert(filterYYBF);
+        await devKnex('yiyebaofu').returning('id').insert(filterYYBF);
+
         for (const file of entryFiles) {
           fs.renameSync(file,
             path.resolve(__dirname, `../../sprider/data/cl_download/${file.split('/').slice(-1)}`))
@@ -95,72 +115,6 @@ module.exports = {
     }
   },
   // http://127.0.0.1:26339/open/createTask
-  crawlYifileFileLink: async (ctx) => {
-    try {
-      const itemArr = await knex('yiyebaofu')
-        .where({ is_downloaded: false })
-        .orderBy('month')
-        .orderBy('season')
-        .limit(1)
-        .select()
-      const item = itemArr[0]
-      const browserMsg={
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
-        'Content-Type':'application/x-www-form-urlencoded'
-      };
-
-      //访问登录接口获取cookie
-      function getLoginCookie() {
-        return new Promise(function (resolve, reject) {
-          superagent.post('http://www.yifile.com/account.php')
-            .set(browserMsg)
-            .type('form')
-            .send({
-              action: 'login',
-              task: 'login',
-              ref: 'http://www.yifile.com/',
-              formhash: 'c9821bf7',
-              username: 'wxrbw@qq.com',
-              password: 'qingfei775',
-              remember:1,
-            })
-            .redirects(5)
-            .end(function (err, response) {
-            //获取cookie
-            // const cookie = response.headers["set-cookie"];
-            resolve(response);
-          });
-        });
-      }
-
-      const options = {
-        uri: `http://${item.url}`,
-        transform: body => cheerio.load(body),
-      }
-      const res = await getLoginCookie()
-      console.log(res);
-      // const $ = await request(options)
-      // const links = []
-      // console.log($('#vipdown00001').text())
-      // $('#vipdown00001 a').each(function () {
-      //   const link = $(this).attr('href');
-      //   console.log(link)
-      //   links.push(link);
-      // })
-      // console.log(links);
-      ctx.body = {
-        status: 'success',
-        // data: links,
-        // item,
-        res
-      };
-    } catch (e) {
-      ctx.body = {
-        status: 'fail',
-        data: e.stack,
-      };
-    }
-  },
   downloadFile: async (ctx) => {
     // 需开启proxyee-down
     console.log(ctx.request.body)
@@ -287,6 +241,10 @@ module.exports = {
       await knex('yiyebaofu')
         .update('is_downloaded', is_downloaded)
         .where({id})
+      await devKnex('yiyebaofu')
+        .update('is_downloaded', is_downloaded)
+        .where({id})
+
       ctx.body = {
         status: 'success',
         data: null

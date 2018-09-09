@@ -321,7 +321,7 @@
     }
   }
 </script>
-<style scoped lang="scss">
+<style scoped lang="stylus">
   .index {
     width: 100%;
     min-width: 1024px;
