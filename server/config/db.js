@@ -32,7 +32,7 @@ const devConfig = {
   host: 'localhost',
   user: 'wxr',
   password: 'qingfei775',
-  database: '91data'
+  database: 'postgres'
 };
 
 const knex = require('knex')({

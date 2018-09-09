@@ -21,7 +21,9 @@ knex.schema.withSchema('wxr').hasTable('yiyebaofu').then(function(exists) {
       table.integer('season');
       table.boolean('is_downloaded').defaultTo(false);
       table.timestamp('created_time').defaultTo(knex.fn.now());
-
+      table.text('download_link');
+      table.text('crawler_note');
+      table.text('origin_file_name');
       console.log('table yiyebaofu has created!');
     });
   }
