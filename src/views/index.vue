@@ -160,7 +160,7 @@
                 },
                 on: {
                   'on-change': () => {
-                    this.toggleStatus(params.row.id)
+                    this.toggleStatus(params.row.title)
                   }
                 }
               }, params.row.is_downloaded ? '已下载' : '未下载')
@@ -182,11 +182,11 @@
           })
         } else {
           this.$Message.info({
-            content: '数据加载成功'
+            content: '数据加载成功, 请刷新.'
           })
-          setTimeout(() => {
-            window.location.reload()
-          }, 500)
+          // setTimeout(() => {
+          //   window.location.reload()
+          // }, 50000)
         }
       },
       toggleHide () {
@@ -292,18 +292,18 @@
       handleChangePage (page_at) {
         this.fetch91Data(page_at)
       },
-      toggleStatus (id) {
+      toggleStatus (title) {
         const { titles } = this
         let status = null
         let tmp = null;
         for (const t of titles) {
-          if (t.id === id) {
+          if (t.title === title) {
             status = !t.is_downloaded
             tmp = t
           }
         }
         util.ajax.post('91data/editTitleStatusById', {
-          id, is_downloaded: status
+          title, is_downloaded: status
         }).then(res => {
           // console.log(res)
           tmp.is_downloaded = status

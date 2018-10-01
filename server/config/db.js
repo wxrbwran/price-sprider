@@ -1,10 +1,3 @@
-// const proConfig = {
-//   host: '*',
-//   user: '*',
-//   password: '(*)',
-//   database: 'postgres'
-// };
-//
 // const devConfig = {
 //   host: 'localhost',
 //   user: 'wxr',
@@ -37,17 +30,18 @@ const devConfig = {
 
 const knex = require('knex')({
   client: 'pg',
+  searchPath: 'public',
+  connection: devConfig,
+  acquireConnectionTimeout: 10000
+});
+const prodKnex = require('knex')({
+  client: 'pg',
   searchPath: 'wxr',
   connection: proConfig,
   acquireConnectionTimeout: 10000
 });
-const devKnex = require('knex')({
-  client: 'pg',
-  searchPath: 'wxr',
-  connection: devConfig,
-  acquireConnectionTimeout: 10000
-});
+
 
 module.exports = {
-    knex, devKnex
+    knex, prodKnex
 };

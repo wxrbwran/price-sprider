@@ -4,11 +4,10 @@ const fs = require('fs')
 const path = require('path')
 const { transNumber } = require('../utils/transNumber')
 
-const lists = 'http://t66y.com/htm_data/7/1809/3269867.html'
+const lists = ``;
 
 function getPageAsync(uri) {
   return new Promise(function(resolve, reject){
-    console.log('正在爬取....');
     const priceCrawler = new Crawler({
       rateLimit: 5000,
       forceUTF8: true,
@@ -21,14 +20,18 @@ function getPageAsync(uri) {
           let urls = {}
           let $ = res.$
           const pageTitle = $('title').text().split(' - 技術討論區')[0]
+          console.log(`正在爬取....${pageTitle}`);
           const text = $('.tpc_content.do_not_catch').text()
+          console.log('pageTitle)[1]', text.split(pageTitle)[1] )
           const pairs = text.split(pageTitle)[1] ? text.split(pageTitle)[1].split('.html') : text.split('.html')
+          console.log('pairs', pairs)
           urls.content = []
           urls.title = pageTitle
           const tmpArr = pageTitle.split('月');
           urls.month = transNumber[tmpArr[0].slice(-1)]
           urls.season = transNumber[tmpArr[1].split('季')[0].split('第')[1]]
           for (const pair of pairs) {
+            console.log(pair);
             const tmp = {}
             const item = pair.split('https://')
             if (!!item[1]) {

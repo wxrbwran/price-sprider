@@ -1,35 +1,14 @@
-const { knex, devKnex } = require('../config/db');
+const { knex, prodKnex } = require('../config/db');
 const moment = require('moment');
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob')
 const axios = require('axios')
 
-knex.schema.withSchema('wxr').hasTable('yiyebaofu').then(function(exists) {
-  console.log('prod table yiyebaofu', exists);
-  if (!exists) {
-    return knex.schema.withSchema('wxr').createTable('yiyebaofu', function(table) {
-      table.increments();
-      table.text('page_title');
-      table.text('title');
-      table.text('url').unique().notNull();
-      table.integer('year').defaultTo(new Date().getFullYear());
-      table.integer('month');
-      table.integer('season');
-      table.boolean('is_downloaded').defaultTo(false);
-      table.timestamp('created_time').defaultTo(knex.fn.now());
-      table.text('download_link');
-      table.text('crawler_note');
-      table.text('origin_file_name');
-      console.log('prod table yiyebaofu has created!');
-    });
-  }
-});
-
-devKnex.schema.withSchema('wxr').hasTable('yiyebaofu').then(function(exists) {
+knex.schema.withSchema('public').hasTable('yiyebaofu').then(function(exists) {
   console.log('dev table yiyebaofu', exists);
   if (!exists) {
-    return devKnex.schema.withSchema('wxr').createTable('yiyebaofu', function(table) {
+    return knex.schema.withSchema('public').createTable('yiyebaofu', function(table) {
       table.increments();
       table.text('page_title');
       table.text('title');
@@ -43,6 +22,27 @@ devKnex.schema.withSchema('wxr').hasTable('yiyebaofu').then(function(exists) {
       table.text('crawler_note');
       table.text('origin_file_name');
       console.log('dev table yiyebaofu has created!');
+    });
+  }
+});
+
+prodKnex.schema.withSchema('wxr').hasTable('yiyebaofu').then(function(exists) {
+  console.log('prod table yiyebaofu', exists);
+  if (!exists) {
+    return prodKnex.schema.withSchema('wxr').createTable('yiyebaofu', function(table) {
+      table.increments();
+      table.text('page_title');
+      table.text('title');
+      table.text('url').unique().notNull();
+      table.integer('year').defaultTo(new Date().getFullYear());
+      table.integer('month');
+      table.integer('season');
+      table.boolean('is_downloaded').defaultTo(false);
+      table.timestamp('created_time').defaultTo(knex.fn.now());
+      table.text('download_link');
+      table.text('crawler_note');
+      table.text('origin_file_name');
+      console.log('prod table yiyebaofu has created!');
     });
   }
 });
@@ -89,8 +89,8 @@ module.exports = {
         for (const d of hasInDatabase) {
           filterYYBF = filterYYBF.filter(i => (i.title !== d.title || i.url !== d.url))
         }
-        await knex('yiyebaofu').returning('id').insert(filterYYBF);
-        await devKnex('yiyebaofu').returning('id').insert(filterYYBF);
+        const devId = await knex('yiyebaofu').returning('id').insert(filterYYBF);
+        const prodId = await prodKnex('yiyebaofu').returning('id').insert(filterYYBF);
 
         for (const file of entryFiles) {
           fs.renameSync(file,
@@ -104,6 +104,7 @@ module.exports = {
             hasInDatabase,
             yiyebaofuLength: yiyebaofu.length,
             filterYYBFLength: filterYYBF.length,
+            devId, prodId,
           },
         }
       } catch (e) {
@@ -173,10 +174,6 @@ module.exports = {
     try {
       const { page_size, page_at, month, season, is_downloaded, keyword } = ctx.request.query;
       const offset = page_size * (page_at - 1);
-      // const countObj = await knex('yiyebaofu').count('id');
-      // const total = +countObj[0].count;
-      let rawString = '';
-      let rawArray = [];
       console.log(month, season, is_downloaded)
       console.log(typeof is_downloaded)
       const queryObj = {};
@@ -236,18 +233,18 @@ module.exports = {
     }
   },
   editTitleStatusById: async (ctx) => {
-    const { id, is_downloaded } = ctx.request.body
+    const { title, is_downloaded } = ctx.request.body
     try {
-      await knex('yiyebaofu')
-        .update('is_downloaded', is_downloaded)
-        .where({id})
-      await devKnex('yiyebaofu')
-        .update('is_downloaded', is_downloaded)
-        .where({id})
+      const devId = await knex('yiyebaofu')
+        .update('is_downloaded', is_downloaded, ['id'])
+        .where({title})
+      const prodId = await prodKnex('yiyebaofu')
+        .update('is_downloaded', is_downloaded, ['id'])
+        .where({title})
 
       ctx.body = {
         status: 'success',
-        data: null
+        data: { devId, prodId },
       }
     } catch (e) {
       ctx.body = {
