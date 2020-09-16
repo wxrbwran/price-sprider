@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const title = function(title) {
-  title = title ? title + ' - Home' : 'iView project';
+  title = title ? title + ' - Home' : 'xr';
   window.document.title = title;
 };
 console.log('process.env.NODE_ENV', process.env.NODE_ENV);

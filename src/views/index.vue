@@ -2,8 +2,8 @@
   <div class="index">
     <div class="index-top">
       <div class="index-action">
-        <Input placeholder="输入文件夹路径"></Input>
-        <Button @click="toggleHide">处理</Button>
+        <Input v-model="path" placeholder="输入文件夹路径"></Input>
+        <Button @click="loadNewData">处理</Button>
       </div>
       <div class="index-selections">
         <div class="index-search">
@@ -29,6 +29,7 @@ import clipboard from 'clipboard-polyfill';
 export default {
   data() {
     return {
+      path: '',
       is_downloaded: null,
       keyword: null,
       isHidden: true,
@@ -44,29 +45,9 @@ export default {
           },
         },
         {
-          title: '页面',
-          key: 'page_title',
-          width: 185,
-          render: (h, params) => {
-            return h(
-              'p',
-              {
-                style: {
-                  whiteSpace: 'nowrap',
-                  textOverflow: 'ellipsis',
-                  overflow: 'hidden',
-                },
-                attrs: {
-                  title: params.row.page_title,
-                },
-              },
-              this.isHidden ? '***' : params.row.page_title,
-            );
-          },
-        },
-        {
           title: '名字',
-          key: 'title',
+          key: 'filename',
+          // width: 200,
           render: (h, params) => {
             return h(
               'h3',
@@ -77,17 +58,17 @@ export default {
                   '-webkit-line-clamp': 2,
                 },
                 attrs: {
-                  title: params.row.title,
+                  title: params.row.filename,
                 },
               },
-              this.isHidden ? '***' : params.row.title,
+              this.isHidden ? '***' : params.row.filename,
             );
           },
         },
         {
-          title: '链接',
-          key: 'url',
-          width: 75,
+          title: '地址',
+          key: 'filendir',
+          // width: 200,
           render: (h, params) => {
             const self = this;
             return h(
@@ -108,24 +89,19 @@ export default {
                   },
                 },
               },
-              '去下载',
+              params.row.filedir,
             );
           },
         },
         {
-          title: '年',
-          key: 'year',
-          width: 75,
+          title: '宽度',
+          key: 'width',
+          width: 100,
         },
         {
-          title: '月',
-          key: 'month',
-          width: 50,
-        },
-        {
-          title: '季',
-          key: 'season',
-          width: 60,
+          title: '高度',
+          key: 'height',
+          width: 100,
         },
         {
           title: '操作',
@@ -143,7 +119,7 @@ export default {
                   'on-change': () => {},
                 },
               },
-              params.row.is_downloaded ? '已下载' : '未下载',
+              '删除',
             );
           },
         },
@@ -155,6 +131,11 @@ export default {
   methods: {
     async loadNewData(e) {
       console.log(e);
+      const res = await util.ajax.post('/video/check', {
+        path: this.path,
+      });
+      console.log('res', res);
+      this.titles = res.list;
     },
     toggleHide() {
       this.isHidden = !this.isHidden;

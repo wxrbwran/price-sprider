@@ -1,5 +1,6 @@
 const router = require('koa-router')();
 const _91Controller = require('../controller/91data');
+const videoController = require('../controller/video');
 
 router.prefix('/api/v0');
 
@@ -15,5 +16,9 @@ router.get(
   _91Controller.getDistinctSeasonByMonth,
 );
 router.post('/91data/editTitleStatusById', _91Controller.editTitleStatusById);
+
+// video
+
+router.post('/video/check', videoController.handleCheckVideo);
 
 module.exports = router;
