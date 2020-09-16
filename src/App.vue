@@ -5,20 +5,16 @@
 </template>
 <script>
 export default {
-  data () {
-    return {
-    };
+  data() {
+    return {};
   },
-  mounted() {
-  },
-  beforeDestroy() {
-  },
-  methods: {
-  }
+  mounted() {},
+  beforeDestroy() {},
+  methods: {},
 };
 </script>
 <style>
-  body{
-    min-width: 1024px;
-  }
+body {
+  min-width: 1024px;
+}
 </style>

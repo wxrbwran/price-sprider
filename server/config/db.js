@@ -20,28 +20,27 @@
 // });
 //
 
-
 const proConfig = {
   host: '123.206.90.112',
-  user: 'wxr',
+  user: 'xiaoran',
   password: 'qingfei775',
-  database: '91data'
+  database: '91data',
 };
 
 const devConfig = {
   host: 'localhost',
-  user: 'wxr',
-  password: 'qingfei775',
-  database: 'postgres'
+  user: 'wuxiaoran',
+  password: '890929',
+  database: 'xiaoran',
 };
 
 const knex = require('knex')({
   client: 'pg',
   searchPath: 'wxr',
   connection: proConfig,
-  acquireConnectionTimeout: 10000
+  acquireConnectionTimeout: 10000,
 });
 
 module.exports = {
-    knex
+  knex,
 };
