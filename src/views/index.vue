@@ -30,9 +30,8 @@ export default {
   data() {
     return {
       path: '',
-      is_downloaded: null,
       keyword: null,
-      isHidden: true,
+      isHidden: false,
       page_at: 1,
       total: 0,
       columns: [
@@ -80,14 +79,7 @@ export default {
                   // href: `http://${params.row.url}`,
                   // target: '_blank'
                 },
-                on: {
-                  click() {
-                    self.writeClicpboard(
-                      `${params.row.title}.zip`,
-                      `http://${params.row.url}`,
-                    );
-                  },
-                },
+                on: {},
               },
               params.row.filedir,
             );
@@ -116,7 +108,9 @@ export default {
                   value: params.row.is_downloaded,
                 },
                 on: {
-                  'on-change': () => {},
+                  'on-change': () => {
+                    this.handleDelete([params.row.filedir]);
+                  },
                 },
               },
               '删除',
@@ -155,6 +149,9 @@ export default {
     fetchData(page_at) {},
     handleChangePage(page_at) {
       this.fetch91Data(page_at);
+    },
+    handleDelete(dirs) {
+      console.log(dirs);
     },
     loading() {
       this.$Message.loading({
